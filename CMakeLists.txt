@@ -7,7 +7,7 @@ find_package(SDL2 REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 
-include_directories(OpenGlSdl ${SDL2_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS})
+include_directories(HelloWorld ${SDL2_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS})
 include_directories(headers)
 
 add_executable(HelloWorld src/main.c)
