@@ -141,12 +141,12 @@ int main(int argc, char *argv[]) {
     }
 
     // start render loop
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     bool appIsRunning = true;
     while (appIsRunning) {
-        // check for sdl events (only quit so far)
+        // check for sdl events (only for quit so far)
         SDL_Event event;
-        if (SDL_PollEvent(&event)) {
+        while (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT) {
                 appIsRunning = false;
             }
